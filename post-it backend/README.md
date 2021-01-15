@@ -1,4 +1,4 @@
-# HospitalAPI
+# POST IT
 Building API using Node
 
  <h4>Tech Stack </h4>
@@ -14,7 +14,7 @@ Building API using Node
       and run Command 
       <br>
       <code>
-      git clone https://github.com/chiraggarg025/Hospital-API.git
+      git clone https://github.com/chiraggarg025/coda_global.git
       </code>
       <br>
    <b>Step 2 :</b>
@@ -36,68 +36,25 @@ Open http://localhost:8000 to view it in the browser.
 </p>
 <h4>API Calls</h4>
 <ol>
-<li> To Register Doctor</li>
+<li> To Register User</li>
   <b>Required Fields</b>
     <p>
     name <br>
     email <br>
     password <br>
-    API CALL : <code> /doctor/register</code> 
+    API CALL : <code> /user/register</code> 
     </p>
-    <li>Doctor Login</li>
+    <li>Register Login</li>
   <b>Required Fields</b>
     <p>
     email <br>
     password <br>
-    API CALL : <code> /doctor/login</code><br>
-   <b> Here u recieve a Jwt Token Keep this token Safe</b>
-     </p>
-      <li>Register Patient</li>
-    <b>Required Fields</b>
-    <p>
-    name <br>
-    phone <br>
-    <p>
-    API CALL : <code>/patients/register</code>
+    API CALL : <code> /user/login</code><br>
+   
     <br>
-      <b>Pass the JWT token in header authentications as bearer to Register Patient </b>
+      <b>Pass the JWT token in header authentications as bearer to Register User </b>
     </p>
-   </p>
-     <li>Create patient Report</li>
-     <b>Required Fields</b>
-    <p>
-    status <br>
-     API CALL : <code>/patients/:id/create_report</code>
-     <br>
-     <b>Pass the JWT token in header authentications as bearer to Create Report </b>
-    <br>
-    <b><code>/:id</code> &nbsp pass the Patient Phone Number 
-     </b>
-    </p>
-     <li>All Reports of a Specific Patient</li>
-     API CALL : <code>/patients/:id/all_reports</code>
-     <br>
-     <b><code>/:id</code> &nbsp pass the Patient ID
-     </b>
-    </p>
-     <li>Reports with specific status</li>
-    <p>
-     API CALL : <code>/reports/:status</code>
-     <br>
-     <b><code>/:status</code> &nbsp pass the status </b>
-     <br>
-     For Example:
-     <br>
-     <code>
-     Negative ,
-     Travelled-Quarantine,
-     Symptoms-Quarantine,
-     Positive-Admit
-     </code>
-    </p>
-    
-     
-    
+ 
 </ol>
  
   
